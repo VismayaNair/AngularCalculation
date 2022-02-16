@@ -32,8 +32,9 @@ Validate the HTML code.
 Publish the website in the given URL.
 
 PROGRAM :
+
+#App.component.html coding:
 ~~~
-app.component.html coding:
 <body>
 <h1>Math Calculations</h1>
 <div class="container">
@@ -47,7 +48,9 @@ app.component.html coding:
 </div>
 </div>
 </body>
-app.component.css coding:
+~~~
+#app.component.css coding:
+~~~
 * {
   box-sizing:border-box;
   font-family: Arial, Helvetica, sans-serif;
@@ -88,7 +91,9 @@ h1{
   margin: 0px 0px 0px 0px;
   color: #000000;
 }
-app.component.ts coding:
+~~~
+#app.component.ts coding:
+~~~
 import { Component } from '@angular/core';
 
 @Component({
@@ -99,7 +104,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'mathcalculations';
 }
-rectangle.component.html coding:
+~~~
+#rectangle.component.html coding:
+~~~
 <h2>Area of a Rectangle</h2>
     <div class="formelement">
     Length=<input type="text" [(ngModel)]="length"> Meters <br/>
@@ -113,7 +120,10 @@ rectangle.component.html coding:
     <div class="formelement">
     Area=<input type="text" [value]="area"> Meters<sup>2</sup>
     </div>
-rectangle.component.css coding:
+~~~
+
+#rectangle.component.css coding:
+~~~
 * {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
@@ -142,7 +152,9 @@ rectangle.component.css coding:
       margin-top: 5px;
       margin-bottom: 5px;
   }
-rectangle.component.ts coding:
+~~~
+#rectangle.component.ts coding:
+~~~
 import { Component } from "@angular/core"
 
 @Component({
@@ -165,7 +177,9 @@ export class RectangleComponent{
         this.area =  this.length * this.breadth;
     }
 }
-cone.component.html coding:
+~~~
+#cone.component.html coding:
+~~~
 <h2>Volume of a Cone</h2>
 <div class="formelement">
 Radius=<input type="text" [(ngModel)]="radius"> Meters <br/>
@@ -179,7 +193,9 @@ Height=<input type="text" [(ngModel)]="height"> Meters <br/>
 <div class="formelement">
 Volume=<input type="text" [value]="volume"> Meters<sup>3</sup>
 </div>
-cone.component.css coding:
+~~~
+#cone.component.css coding:
+~~~ 
 * {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
@@ -193,7 +209,10 @@ h2{
     margin-top: 5px;
     margin-bottom: 5px;
 }
-cone.component.ts coding:
+~~~
+
+#cone.component.ts coding:
+~~~
 import { style } from "@angular/animations";
 import { Component } from "@angular/core"
 
@@ -218,7 +237,9 @@ export class ConeComponent{
         this.volume = 3.14 * this.radius * this.radius * this.height * 0.3;
     }
 }
-app.module.ts coding:
+~~~
+#app.module.ts coding:
+~~~ 
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
@@ -242,8 +263,8 @@ import { RectangleComponent } from './rectangle/rectangle.component';
 export class AppModule { }
 ~~~
 ## OUTPUT:
-![github](screenshot.jpg)
-
+![github](1.jpg)
+![github](2.jpg)
 
 ## Result:
 A dynamic website to perform mathematical calculations using Angular Framwork has been designed.
